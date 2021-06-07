@@ -1,41 +1,12 @@
+@import './style/functions';
+@import './style/visuallyhidden';
 
-   $main-text-color: #757575;
-   $primary-white-color: #FFFFFF;
-   $logo-black-color: #000000;
-   $title-black-color: #212121;
-   $accent-color: #2196F3;
-   $hero-background: #2F303A;
-   $collor-rgb-footer: rgba(255, 255, 255, 0.6);
-   $background-Button: #188CE8;
-   $background-card-color:#F5F4FA;
-   $color-bottom:#ECECEC;
-   $background-card-portfolio:#EEEEEE;
-   $icon-social-color:#AFB1B8;
-   $card-set-gap: 30px;
-   $cubic-bezier:cubic-bezier(0.4, 0, 0.2, 1);
-   $time-function:250ms;
-   $color-box-shadow: rgba(0, 0, 0, 0.15);
-   $decoration:none;
-   $marginTextTitle:0;
-
-
-
-
+   
+  
 
                        /* ====== VISUALLY HIDDEN ======*/
 
-.visually-hidden{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
+
 
                     /* ====== END VISUALLY HIDDEN ======*/
 
@@ -74,11 +45,9 @@
 }
 
  
-.flex,
-.header__section,
-.portfolio-list{
+.flex
+{
     display: flex;
-   
 }
 
 .container{ 
@@ -759,12 +728,12 @@
                 /*====== SECTION PORTFOLIO ======*/
 
 
-.section-portfolio{
+.portfolio{
        padding-top: 94px;
        padding-bottom: 91px;
    }
 
-.section-list{
+.portfolio__list-filter{
     
     display:flex;
     margin-top: 0;
@@ -773,14 +742,14 @@
 
    }
 
-   .section-list .portfolio-button-flex:nth-child(-n + 4){
+   .portfolio__button:nth-child(-n + 4){
        margin-left: 0;
        margin-right: 8px;
    }
 
 
 
-.filters{
+.portfolio__filters{
     padding: 6px 22px;
     border-radius: 4px;
     border:  $accent-color;
@@ -796,14 +765,14 @@
 
 }
 
-.filters:hover, 
-.filters:focus{
+.portfolio__filters:hover, 
+.portfolio__filters:focus{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     background-color: $accent-color;
     color: $primary-white-color;
 }
 
-.portfolio-list{
+.portfolio__list{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -811,19 +780,19 @@
     margin-top: -30px;
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus{
+.portfolio__link:hover,
+.portfolio__link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-list-item{
+.portfolio__list-item{
     flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-top: 30px;
 }
 
 
-.portfolio-card-border{
+.portfolio__card-border{
     border-bottom: 1px solid $background-card-portfolio;
     border-right: 1px solid $background-card-portfolio;
     border-left: 1px solid $background-card-portfolio;
@@ -831,7 +800,7 @@
     padding: 20px 24px;
 }
 
-.portfolio-list .portfolio-title{
+.portfolio__title{
     color: $logo-black-color;
     font-weight: 700;
     font-size: 18px;
@@ -839,26 +808,26 @@
     margin-bottom: 4px;
 }
 
-.portfolio-list .text{
+.portfolio__text{
     color: $main-text-color;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
 }
 
- .img-section{
+ .portfolio__img-section{
     display: block;
     position: relative;
     overflow: hidden;
     
 } 
 
-.portfolio-link{
+.portfolio__link{
     display: block;
     position: relative;
 }
 
-.portfolio-description{
+.portfolio__description{
     display: block;
     position: absolute;
     width: 100%;
@@ -876,8 +845,8 @@
     
 }
 
-.portfolio-link:hover .portfolio-description,
-.portfolio-link:focus .portfolio-description{
+.portfolio__link:hover .portfolio__description,
+.portfolio__link:focus .portfolio__description{
 
     transform: translateY(-100%);
 
@@ -899,16 +868,16 @@
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity $time-function $cubic-bezier;
-}
 
-.backdrop.is-hidden {
+
+&.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 
 }
 
-.modal{
+&__conteiner{
     position: absolute;
     width: 528px;
     top: 50%;
@@ -918,9 +887,11 @@
     background: $primary-white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-}
+}}
 
-.modal-link-close{
+.modal{
+
+.modal__link-close{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -935,26 +906,33 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     cursor: pointer;
-    
-} 
+}
 
-.modal-icon{
+
+.modal__icon{
     width: 18px;
     height: 18px;
     transition: fill $time-function $cubic-bezier;
 }
-.modal-link-close:hover .modal-icon,
-.modal-icon:hover,
-.modal-link-close:focus .modal-icon{
+
+.modal__link-close:hover .modal__icon,
+.modal__icon:hover,
+.modal__link-close:focus .modal__icon{
     fill: #2196F3;
 }
+}
+
 
 
                     /*====== MODAL BACKDROP ======*/
 
                     /*====== SIGNUP FORM ======*/
 
-.form-title{
+.form{
+    flex-direction: column;
+ 
+
+&__title{
 
     font-style: 400;
     font-weight: 700;
@@ -966,26 +944,24 @@
     color: #212121;
 }
 
-.forma{
-    flex-direction: column;
-}      
+    
 
-.user-form,
-.form-description{
+&__user{
     display: block;
     margin-bottom: 4px;
 }
 
-.form-description{
+&__description{
+    display: block;
+    margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: $main-text-color;
-    
 
 }
 
-.icon-form{
+&__icon{
     position: relative;
     display: block;
     width: 100%;
@@ -993,7 +969,7 @@
 
 }
 
-.form-input{
+&__input{
     
     display: flex;
     width: 100%;
@@ -1007,16 +983,16 @@
 }
 
 
-.form-input:hover,
-.feedback-input:hover,
-.feedback-input:focus,
-.form-input:focus{
+&__input:hover,
+&__feedback-input:hover,
+&__feedback-input:focus,
+&__input:focus{
     border-color: $accent-color;
     outline: none;
 }
 
 
-.input-icon{
+&__input-icon{
     display: block;
     position: absolute;
     width: 18px;
@@ -1028,19 +1004,17 @@
     cursor: pointer;
 }
 
-.icon-form:focus-within > .input-icon,
-.icon-form:hover > .input-icon{
+&__icon:focus-within > &__input-icon,
+&__icon:hover > &__input-icon{
     
     fill: $accent-color;
-    
 }
 
-
-.feedback-input{
+&__feedback-input{
 
     display: flex;
     width: 100%;
-    height: 40px;
+    height: 120px;
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -1050,27 +1024,20 @@
     outline: none;
 }
 
-.feedback-input{
-
-    width: 100%;
-    height: 120px;
-}
-.feedback-input::placeholder{
+&__feedback-input::placeholder{
 
     color: rgba(117, 117, 117, 0.5);
 
-}
+}} 
 
-.forma-checkbox{
-
+.license{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
     
-}
 
-.checkbox-container{
+&__checkbox-container{
 
     position: relative;
     display: flex;
@@ -1078,8 +1045,8 @@
     
 }
 
-.checkbox{
-    
+&__checkbox{
+    // спрятать кастомный чекбокс
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -1092,7 +1059,8 @@
 
 }
 
-.icon-checkbox{
+
+&__icon-checkbox{
 
     display: flex;
     position: relative;
@@ -1110,22 +1078,21 @@
 
 }
 
-.icon-checkbox:hover,
-.checkbox:focus + .icon-checkbox{
+&__icon-checkbox:hover,
+&__checkbox:focus + &__icon-checkbox{
 
     border-color: $accent-color;
 
 }
 
-.checkbox:checked + .icon-checkbox{
+&__checkbox:checked + &__icon-checkbox{
     
     background-color: $accent-color;
     border-color: $accent-color;
     background-origin: border-box;
 }
 
-
-.checkbox-text{
+&__checkbox-text{
 
     display: inline-block;
     font-size: 14px;
@@ -1135,26 +1102,24 @@
     
 }
 
-
-.checkbox-text-doc{
+&__checkbox-text-doc{
 
     color: $accent-color;
     text-decoration-line: underline;
 
 }
 
-.input-icon-checkbox{
+&__input-icon-checkbox{
     display: block;
     position: absolute;
     width: 16px;
     height: 15px;
     cursor: pointer;
-    
 }
 
-.button-submit{
-    justify-content: center;
+&__button-submit{
     width: 200px;
     height: 50px;
     margin-left: auto;
     margin-right: auto;}
+}

@@ -25,7 +25,7 @@
 
     <header class="header">
         <div class="container">
-            <div class="header__section">
+            <div class="header__section flex">
                 <nav class="header__nav">
                     <a href="./index.html" class="logo animate__pulse link"><span
                             class="logo__weblogo">Web</span>Studio</a>
@@ -472,71 +472,72 @@
 
     </footer>
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <div class="modal-conteiner">
-                <button type="button" class="modal-link-close" data-modal-close>
-                    <svg class="modal-icon">
+        <div class="backdrop__conteiner">
+            <div class="modal">
+                <button type="button" class="modal__link-close" data-modal-close>
+                    <svg class="modal__icon">
                         <use href="./images/image.svg/sprite.svg#icon-closeblack">
                         </use>
                     </svg></button>
 
-                <form name="signup_form" method="GET" autocomplete="off" class="forma">
-                    <p class="form-title text-title">Оставьте свои данные, мы вам перезвоним</p>
+                <form name="signup_form" method="GET" autocomplete="off" class="form">
+                    <p class="form__title text-title">Оставьте свои данные, мы вам перезвоним</p>
 
-                    <label for="user_name" class="user-form"><span class="form-description">Имя*</span></label>
-                    <div class="icon-form">
-                        <input type="text" name="user-name" id="user_name" class="form-input" required />
-                        <svg class="input-icon">
+                    <label for="user_name" class="form__user"><span class="form__description">Имя*</span></label>
+                    <div class="form__icon">
+                        <input type="text" name="user-name" id="user_name" class="form__input" required />
+                        <svg class="form__input-icon">
                             <use href="./images/image.svg/sprite.svg#icon-person">
                             </use>
                         </svg>
                     </div>
 
-                    <label for="user_phone" class="user-form"><span class="form-description">Телефон*</span></label>
-                    <div class="icon-form">
-                        <input type="tel" name="phone" id="user_phone" class="form-input" required />
-                        <svg class="input-icon">
+                    <label for="user_phone" class="form__user"><span class="form__description">Телефон*</span></label>
+                    <div class="form__icon">
+                        <input type="tel" name="phone" id="user_phone" class="form__input" required />
+                        <svg class="form__input-icon">
                             <use href="./images/image.svg/sprite.svg#icon-phone">
                             </use>
                         </svg>
                     </div>
 
-                    <label for="user_email" class="user-form"><span class="form-description">Почта*</span></label>
-                    <div class="icon-form">
-                        <input type="email" name="user-email" id="user_email" class="form-input" required />
-                        <svg class="input-icon">
+                    <label for="user_email" class="form__user"><span class="form__description">Почта*</span></label>
+                    <div class="form__icon">
+                        <input type="email" name="user-email" id="user_email" class="form__input" required />
+                        <svg class="form__input-icon">
                             <use href="./images/image.svg/sprite.svg#icon-email">
                             </use>
                         </svg>
                     </div>
 
-                    <label for="user_feedback" class="user-feedback"><span class="form-description">Комментарий</span>
+                    <label for="user_feedback" class="user-feedback"><span class="form__description">Комментарий</span>
                     </label>
 
                     <div>
                         <textarea name="feedback" id="user_feedback" placeholder="Введите текст"
-                            class="feedback-input"></textarea>
+                            class="form__feedback-input"></textarea>
                     </div>
 
-                    <div class=" forma-checkbox">
+                    <div class="license">
 
 
-                        <label for="checkbox_license" class="checkbox-container">
-                            <input type="checkbox" name="user-license" id="checkbox_license" class="checkbox" />
-                            <span class="icon-checkbox">
-                                <svg class="input-icon-checkbox">
+                        <label for="checkbox_license" class="license__checkbox-container">
+                            <input type="checkbox" name="user-license" id="checkbox_license"
+                                class="license__checkbox" />
+                            <span class="license__icon-checkbox">
+                                <svg class="license__input-icon-checkbox">
                                     <use href="./images/image.svg/sprite.svg#icon-check">
                                     </use>
                                 </svg>
                             </span>
                         </label>
-                        <p class="checkbox-text text-title">Соглашаюсь с рассылкой и принимаю <a href="">
-                                <span class="checkbox-text-doc">Условия договора</span></a>
+                        <p class="license__checkbox-text text-title">Соглашаюсь с рассылкой и принимаю <a href="">
+                                <span class="license__checkbox-text-doc">Условия договора</span></a>
                         </p>
 
                     </div>
 
-                    <button type="submit" class="button-submit button" data-modal-open>Отправить</button>
+                    <button type="submit" class="license__button-submit button" data-modal-open>Отправить</button>
 
                 </form>
 
