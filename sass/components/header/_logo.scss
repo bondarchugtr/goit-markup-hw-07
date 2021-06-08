@@ -1,0 +1,16 @@
+.logo{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: $logo-black-color;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    animation: pulse 500ms 6 $cubic-bezier $time-function;
+
+    &__weblogo{
+    color: $accent-color;
+    font-size: 26px;
+    line-height: 1.19;
+}}
+

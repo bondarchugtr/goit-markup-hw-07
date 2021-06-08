@@ -1,326 +1,41 @@
-@import './style/functions';
-@import './style/visuallyhidden';
 
+
+ /* ====== Utitlits ======*/
+ @import './utils/functions';
+@import './utils/visuallyhidden';
+@import './utils/button';
+@import './utils/style';
+/* ====== END Utitlits ======*/
+
+
+/* ====== Components======*/
+
+@import './components/header/header';
+@import './components/header/logo';
+@import './components/hero/hero';
+@import './components/features/features';
+@import './components/command/command';
+
+
+
+
+
+
+
+
+
+@import './components/section-portfolio/section-portfolio';
+
+
+/* ====== END Components Header======*/
    
   
-
-                       /* ====== VISUALLY HIDDEN ======*/
-
-
-
-                    /* ====== END VISUALLY HIDDEN ======*/
-
-   body{
-
-    color: $main-text-color;
-    font-family: 'Roboto', sans-serif;
-    background-color: $primary-white-color;
-    letter-spacing: 0.03em;
-} 
-
-                    /* ====== COMBINED ALL SECTION======*/
-   
-
-.text-title{
-    margin-top:$marginTextTitle;
-    margin-bottom: $marginTextTitle; 
-}
-
-
-.list{
-    margin: 0;
-    padding: 0;
-    list-style: none
-
-}
-
-.link{
-     text-decoration: $decoration;
-
-}
-.img{
-     display: block;
-    max-width: 100%;
-    height: auto;
-}
-
- 
-.flex
-{
-    display: flex;
-}
-
-.container{ 
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    
-}
-
-.logo{
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    color: $logo-black-color;
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    line-height: 1.19;
-    animation: pulse 500ms 6 $cubic-bezier $time-function ;
-}
-
-    .logo__weblogo{
-    color: $accent-color;
-    font-size: 26px;
-    line-height: 1.19;
-}
-
-
-.button{
-    display: flex;
-    padding: 10px 32px;
-    border-radius: 4px;
-    border:  $accent-color;
-    min-width: 200px;
-    background: $accent-color;
-    box-shadow:  $color-box-shadow;
-    color: $primary-white-color;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    transition:  background $time-function $cubic-bezier, box-shadow $time-function $cubic-bezier;
-
-   
-}
-
-    .button:hover,
-    .button:focus,
-    .button-submit:hover,
-    .button-submit:focus,
-    .footer__submit-button:hover,
-    .footer__submit-button:focus{
-        background: $background-Button;
-        box-shadow:  $color-box-shadow;
-    }
-
-
-
-
-
-                    /* ====== END COMBINED ALL SECTION======*/
-
-
-                    /*======PAGE HEADER======*/
-
-
-.header{
-
-    border-bottom: 1px solid $color-bottom;
-
-
-&__nav{
-    display: flex;
-     align-items: center;
-}
-
-&__nav-list{
-    display: flex;
-    margin-left: 93px;
-    width: 294px;
-    left: 453px;
-    top: 32px;
-} 
-
-&__item{
-    margin-right: 50px;
-}
-
-&__item:last-child{
-    margin-right: 0;
-}
-
-
-&__style{
-
-    color: $title-black-color;
-    position: relative;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    transition: color $time-function $cubic-bezier;
-}
-
-
-&__link:hover,
-&__link:focus,
-&__link:hover::after,
-&__link:focus::after{ 
-
-    color:$accent-color;
-}
-
-.current::after{
-    position: absolute;
-    display: block;
-    content: "";
-    width: 100%;
-    height: 4px;
-    bottom: 0;
-    background: #2196F3;
-    border-radius: 2px;
-
-}
-
-.current{ 
-    color: $accent-color; 
-    transition: color $time-function $cubic-bezier;
-
-}
-
-&__list-contacts{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-
-&__list-item{
-    margin-right: 50px;
-}
-
-&__list-item:last-child{
-    margin-right: 0;
-}
-
-
-&__contacts{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $main-text-color;
-    transition: color $time-function $cubic-bezier;
-}
-
-&__icon{
-     width: 16px;
-     height: 16px;
-    margin-right: 10px;
-    fill: currentColor;
-    transition: fill $time-function $cubic-bezier;
-
-}
-
-
-&__contacts:hover,
-&__contacts:focus,
-&__icon:focus,
-&__icon:hover{
-
-    color: $accent-color; 
-    fill: $accent-color;
-    
-}
-}    
-
-
-                    /*======END PAGE HEADER======*/
-
-                    /*====== HERO ======*/
-
-.hero{
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-color: $hero-background;
-    text-align: center;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-     rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    &__title{
-
-        margin-top: 0;
-        margin-bottom: 30px;
-        color: $primary-white-color;
-        font-weight: 700;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-    }
-
-    &__button{
-
-        display: flex;
-        justify-content: center;
-    }
-
-}
-
-                /*====== END HERO ======*/
 
 
                 /*====== SECTION-FEATURES ======*/
 
 
-.section-features{
-    padding-top: 94px;
-    padding-bottom: 94px;
-    color:$title-black-color;
-    font-size: 36px;
-    line-height: 1.16;
 
-
-    &__list-item:nth-child(-n + 3){
-    margin-left: 0;
-    margin-right: $card-set-gap;
-}
-
-    &__title{
-    margin-bottom: 10px;
-    color: $title-black-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;   
-}
-    &__text{ 
-        color: $main-text-color;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-    }
-    &__list-item{
-        width: 270px;
-    }
-
-    &__block-icon{
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        width: 270px;
-        height: 120px;
-        background: #F5F4FA;
-        border-radius: 4px;
-        margin-bottom: 30px;
-    }
-
-    &__icon{
-        width: 70px;
-        height: 70px;
-    }
-
-}
-
-                    /*====== END SECTION-FEATURES ======*/
 
 
                     /*====== SECTION-WORK ======*/
@@ -383,110 +98,7 @@
 
                     /*====== SECTION-COMMAND ======*/
 
-.command{
-    display: flex;
-    padding-bottom: 94px;
-    background-color: $background-card-color;
 
-
-&__title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-    color: $title-black-color;
-}
- &__list{
-    display: flex;
-    margin-right: -30px;
-    margin-top: -30px;
-}   
-
-&__list-item{
-    margin-right: 30px;
-    margin-top: 30px;
-    flex-basis: calc((100% - 120px) / 4);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-
-      
-&__card-title{
-    margin-top: 0;
-    margin-bottom: 10px;  
-    color: $logo-black-color;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-}
-
-
-&__card-text{
-    margin-top: 0;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-}
-
-&__social-list{
-
-    display: flex;
-    justify-content: space-between;
-    padding-top: 16px;
-
-}
-
-&__card{
-    display: block;
-    margin-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 32px;
-    padding-right: 32px;
-}
-
-&__icon-link{
-    display: flex;
-    justify-content: center;
-    align-items:center; 
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    color: $icon-social-color;
-    transition: background-color $time-function $cubic-bezier;
-}
-
-&__social-list-icon:last-child{
-    margin-right: 0;
-}
-
-&__social-list-icon{
-
-    margin-right: 10px;
-}
-
-
-&__icon{
-    display: flex;
-    align-items:center;
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-    transition: fill $time-function $cubic-bezier;
-}
-&__icon-link:hover,
-&__icon-link:focus{
-    background-color: $accent-color;
-}
-
-&__icon-link:hover &__icon,
-&__icon-link:focus &__icon{
-    fill: $primary-white-color;
-}
-}
 
                     /*====== END SECTION-COMMAND ======*/
 
@@ -1123,3 +735,8 @@
     margin-left: auto;
     margin-right: auto;}
 }
+
+
+
+
+
