@@ -1,0 +1,30 @@
+.clients{
+    padding-top: 94px;
+    padding-bottom: 109px;
+
+
+    &__title{
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-black-color;
+    margin-bottom: 50px;
+    }
+
+    &__list{
+        display: flex;
+    }  
+
+    &__item{
+        display: flex;
+        margin-right: 30px;
+
+    } 
+
+    &__item:last-child{
+        margin-right: 0;
+    }
+}
+
+    

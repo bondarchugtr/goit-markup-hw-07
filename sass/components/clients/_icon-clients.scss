@@ -1,0 +1,27 @@
+.clients__icon-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid $icon-social-color;
+        box-sizing: border-box;
+        border-radius: 4px;
+        transition: border $time-function $cubic-bezier;
+    }
+
+    .clients__icon{
+        fill: $icon-social-color;
+        transition: fill $time-function $cubic-bezier;
+    }
+
+    .clients__icon-link:hover,
+    .clients__icon-link:focus{
+        border: 1px solid $accent-color;
+    }
+
+    .clients__icon-link:hover .clients__icon,
+    .clients__icon-link:focus .clients__icon{
+        fill: $accent-color;
+        
+    }

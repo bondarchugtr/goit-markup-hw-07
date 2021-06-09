@@ -1,0 +1,46 @@
+.footer{
+
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $hero-background; 
+
+
+    &__footer-block{
+        display: flex;
+        align-items: baseline;
+        }
+
+    &__address{
+        display: block;
+        color: $primary-white-color;
+        line-height: 1.71;
+        font-style: normal;    
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 231px;
+    }
+
+    &__address-name, 
+    &__address-list &__address-list-item{
+        margin-bottom: 9px;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+    &__address-list-item:last-child{
+         margin-bottom: 0px;
+    }
+
+
+    &__address-list &__contacts{ 
+        color: $collor-rgb-footer; 
+        transition: color $time-function $cubic-bezier;
+
+    }
+
+    &__address-list &__contacts:hover,
+    &__address-list &__contacts:focus{ 
+        color: $accent-color; 
+    }
+}
