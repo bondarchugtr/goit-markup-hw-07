@@ -1,89 +1,94 @@
 .header{
     border-bottom: 1px solid $color-bottom;
-
-&__nav{
-    display: flex;
-     align-items: center;
-}
-
-&__nav-list{
-    display: flex;
-    margin-left: 93px;
-    width: 294px;
-    left: 453px;
-    top: 32px;
-} 
-
-&__item{
-    margin-right: 50px;
-}
-
-&__item:last-child{
-    margin-right: 0;
-}
+}  
 
 
-&__style{
+    .nav{
+        display: flex;
+        align-items: center;
 
-    color: $title-black-color;
-    position: relative;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    transition: color $time-function $cubic-bezier;
-}
+    &__style{
+        color: $title-black-color;
+        position: relative;
+        // @include font($fw, $fs, $lh);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.57;
+        letter-spacing: 0.02em;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        transition: color $time-function $cubic-bezier;
+        }
+
+    &__list{
+        display: flex;
+        width: 294px;
+        left: 453px;
+        top: 32px;
+        }
+
+    &__list_margin{
+        margin-left: 93px;
+        }
+
+    &__list-item{
+        margin-right: 50px;
+        }
+
+    &__list-item:last-child{
+        margin-right: 0;
+        }
+
+    &__list-link:hover,
+    &__list-link:focus,
+    &__list-link:hover::after,
+    &__list-link:focus::after{ 
+        color:$accent-color;
+        }
+
+    &__list-contacts{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        }
+
+    &__list-item{
+        margin-right: 50px;
+        }
+
+    &__list-item:last-child{
+        margin-right: 0;
+        }
+
+    &__contacts{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $main-text-color;
+        transition: color $time-function $cubic-bezier;
+        }
+
+    &__icon{
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+        fill: currentColor;
+        transition: fill $time-function $cubic-bezier;
+
+        }
+
+    &__contacts:hover,
+    &__contacts:focus,
+    &__icon:focus,
+    &__icon:hover{
+        color: $accent-color; 
+        fill: $accent-color;
+        }
+    }
 
 
-&__link:hover,
-&__link:focus,
-&__link:hover::after,
-&__link:focus::after{ 
 
-    color:$accent-color;
-}
+   
 
-
-&__list-contacts{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-
-&__list-item{
-    margin-right: 50px;
-}
-
-&__list-item:last-child{
-    margin-right: 0;
-}
-
-&__contacts{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $main-text-color;
-    transition: color $time-function $cubic-bezier;
-}
-
-&__icon{
-     width: 16px;
-     height: 16px;
-    margin-right: 10px;
-    fill: currentColor;
-    transition: fill $time-function $cubic-bezier;
-
-}
-
-&__contacts:hover,
-&__contacts:focus,
-&__icon:focus,
-&__icon:hover{
-
-    color: $accent-color; 
-    fill: $accent-color;
     
-}
-}    
+  

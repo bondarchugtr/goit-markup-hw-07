@@ -1,4 +1,126 @@
 /* ====== Utitlits ======*/
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+:root {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
+}
+
+hr {
+  height: 0;
+  color: inherit;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, pre, samp {
+  font-family: ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, select {
+  text-transform: none;
+}
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -32,10 +154,11 @@
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover,
-.button:focus,
-.button-submit:hover,
-.button-submit:focus,
+.button:hover, .button:focus, .button-submit:hover, .button-submit:focus {
+  background: #188CE8;
+  box-shadow: rgba(0, 0, 0, 0.15);
+}
+
 .footer__submit-button:hover,
 .footer__submit-button:focus {
   background: #188CE8;
@@ -82,6 +205,11 @@ body {
   padding-right: 15px;
 }
 
+.current {
+  color: #2196F3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .current::after {
   position: absolute;
   display: block;
@@ -91,11 +219,6 @@ body {
   bottom: 0;
   background: #2196F3;
   border-radius: 2px;
-}
-
-.current {
-  color: #2196F3;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -132,58 +255,61 @@ body {
   border-bottom: 1px solid #ECECEC;
 }
 
-.header__nav {
+.nav {
   display: flex;
   align-items: center;
 }
 
-.header__nav-list {
-  display: flex;
-  margin-left: 93px;
-  width: 294px;
-  left: 453px;
-  top: 32px;
-}
-
-.header__item {
-  margin-right: 50px;
-}
-
-.header__item:last-child {
-  margin-right: 0;
-}
-
-.header__style {
+.nav__style {
   color: #212121;
   position: relative;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.57;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__link:hover, .header__link:focus, .header__link:hover::after, .header__link:focus::after {
+.nav__list {
+  display: flex;
+  width: 294px;
+  left: 453px;
+  top: 32px;
+}
+
+.nav__list_margin {
+  margin-left: 93px;
+}
+
+.nav__list-item {
+  margin-right: 50px;
+}
+
+.nav__list-item:last-child {
+  margin-right: 0;
+}
+
+.nav__list-link:hover, .nav__list-link:focus, .nav__list-link:hover::after, .nav__list-link:focus::after {
   color: #2196F3;
 }
 
-.header__list-contacts {
+.nav__list-contacts {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.header__list-item {
+.nav__list-item {
   margin-right: 50px;
 }
 
-.header__list-item:last-child {
+.nav__list-item:last-child {
   margin-right: 0;
 }
 
-.header__contacts {
+.nav__contacts {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,7 +317,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__icon {
+.nav__icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
@@ -199,7 +325,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__contacts:hover, .header__contacts:focus, .header__icon:focus, .header__icon:hover {
+.nav__contacts:hover, .nav__contacts:focus, .nav__icon:focus, .nav__icon:hover {
   color: #2196F3;
   fill: #2196F3;
 }
@@ -352,6 +478,15 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.command__icon-link:hover, .command__icon-link:focus {
+  background-color: #2196F3;
+}
+
+.command__icon-link:hover .command__icon,
+.command__icon-link:focus .command__icon {
+  fill: #FFFFFF;
+}
+
 .command__social-list-icon:last-child {
   margin-right: 0;
 }
@@ -369,30 +504,20 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.command__icon-link:hover,
-.command__icon-link:focus {
-  background-color: #2196F3;
-}
-
-.command__icon-link:hover .command__icon,
-.command__icon-link:focus .command__icon {
-  fill: #FFFFFF;
-}
-
 .work {
   display: flex;
   padding-bottom: 94px;
-}
-
-.work__list-item:nth-child(-n + 2) {
-  margin-left: 0;
-  margin-right: 30px;
 }
 
 .work__list-item {
   position: relative;
   width: 370px;
   height: 295px;
+}
+
+.work__list-item:nth-child(-n + 2) {
+  margin-left: 0;
+  margin-right: 30px;
 }
 
 .work__title {
@@ -454,6 +579,11 @@ body {
   margin-right: 0;
 }
 
+.clients__icon {
+  fill: #AFB1B8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .clients__icon-link {
   display: flex;
   justify-content: center;
@@ -466,13 +596,7 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__icon {
-  fill: #AFB1B8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients__icon-link:hover,
-.clients__icon-link:focus {
+.clients__icon-link:hover, .clients__icon-link:focus {
   border: 1px solid #2196F3;
 }
 

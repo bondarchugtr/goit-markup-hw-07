@@ -1,4 +1,11 @@
-.clients__icon-link{
+
+.clients__icon{
+        fill: $icon-social-color;
+        transition: fill $time-function $cubic-bezier;
+    
+
+
+&-link{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -10,18 +17,16 @@
         transition: border $time-function $cubic-bezier;
     }
 
-    .clients__icon{
-        fill: $icon-social-color;
-        transition: fill $time-function $cubic-bezier;
-    }
+    
 
-    .clients__icon-link:hover,
-    .clients__icon-link:focus{
+    &-link:hover,
+    &-link:focus{
         border: 1px solid $accent-color;
     }
 
-    .clients__icon-link:hover .clients__icon,
-    .clients__icon-link:focus .clients__icon{
+    &-link:hover &,
+    &-link:focus &{
         fill: $accent-color;
         
+    }
     }

@@ -7,6 +7,16 @@
     height: 44px;
     color: $icon-social-color;
     transition: background-color $time-function $cubic-bezier;
+
+    &:hover,
+    &:focus{
+        background-color: $accent-color;
+    }
+
+    &:hover .command__icon,
+    &:focus .command__icon{
+        fill: $primary-white-color;
+    }
 }
 
 .command__social-list-icon:last-child{
@@ -26,13 +36,4 @@
     height: 20px;
     fill: currentColor;
     transition: fill $time-function $cubic-bezier;
-}
-.command__icon-link:hover,
-.command__icon-link:focus{
-    background-color: $accent-color;
-}
-
-.command__icon-link:hover .command__icon,
-.command__icon-link:focus .command__icon{
-    fill: $primary-white-color;
 }

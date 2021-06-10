@@ -17,13 +17,15 @@
     cursor: pointer;
     transition:  background $time-function $cubic-bezier, box-shadow $time-function $cubic-bezier;
 
-   
+    &:hover,
+    &:focus,
+    &-submit:hover,
+    &-submit:focus{
+        background: $background-Button;
+        box-shadow:  $color-box-shadow;
+    }
 }
-
-    .button:hover,
-    .button:focus,
-    .button-submit:hover,
-    .button-submit:focus,
+   
     .footer__submit-button:hover,
     .footer__submit-button:focus{
         background: $background-Button;
