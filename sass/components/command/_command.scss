@@ -5,11 +5,8 @@
 
 
 &__title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+     @include font(36px, 700, 42px);
     text-align: center;
-    letter-spacing: 0.03em;
     margin-bottom: 50px;
     color: $title-black-color;
 }
@@ -30,21 +27,16 @@
 
       
 &__card-title{
+    @include font(16px, 500, 19px);
     margin-top: 0;
     margin-bottom: 10px;  
     color: $logo-black-color;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
     text-align: center;
 }
 
-
 &__card-text{
+    @include font(16px, 400, 19px);
     margin-top: 0;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.18;
     text-align: center;
 }
 

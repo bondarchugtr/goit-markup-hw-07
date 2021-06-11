@@ -43,10 +43,8 @@
     }
 
     &__description-title{
-        font-size: 14px;
-        line-height: 1.14;
+        @include font($fs:14px, $fw:700, $lh:16px);
         text-align: center;
-        letter-spacing: 0.03em;
         text-transform: uppercase;
         color: $primary-white-color;
     }

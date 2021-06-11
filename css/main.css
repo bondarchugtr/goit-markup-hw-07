@@ -140,16 +140,17 @@ summary {
   border-radius: 4px;
   border: #2196F3;
   min-width: 200px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-style: normal;
+  line-height: 1.88;
   background: #2196F3;
   box-shadow: rgba(0, 0, 0, 0.15);
   color: #FFFFFF;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
   align-items: center;
   justify-content: center;
   text-align: center;
-  letter-spacing: 0.06em;
   cursor: pointer;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -223,18 +224,24 @@ body {
 
 .logo {
   display: block;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  line-height: 1.19;
   padding-top: 24px;
   padding-bottom: 25px;
   color: #000000;
   font-family: 'Raleway', sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
   animation: pulse 500ms 6 cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .logo__weblogo {
   color: #2196F3;
   font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-style: normal;
   line-height: 1.19;
 }
 
@@ -261,12 +268,13 @@ body {
 }
 
 .nav__style {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-style: 0.02em;
+  line-height: 1.14;
   color: #212121;
   position: relative;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.57;
-  letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -341,13 +349,14 @@ body {
 }
 
 .hero__title {
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-style: 0.06em;
+  line-height: 1.36;
   margin-top: 0;
   margin-bottom: 30px;
   color: #FFFFFF;
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -412,11 +421,12 @@ body {
 }
 
 .command__title {
-  font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
+  font-weight: 700;
   letter-spacing: 0.03em;
+  font-style: normal;
+  line-height: 1.17;
+  text-align: center;
   margin-bottom: 50px;
   color: #212121;
 }
@@ -436,20 +446,24 @@ body {
 }
 
 .command__card-title {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  line-height: 1.19;
   margin-top: 0;
   margin-bottom: 10px;
   color: #000000;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
   text-align: center;
 }
 
 .command__card-text {
-  margin-top: 0;
-  font-weight: normal;
   font-size: 16px;
-  line-height: 1.18;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  line-height: 1.19;
+  margin-top: 0;
   text-align: center;
 }
 
@@ -545,9 +559,11 @@ body {
 
 .work__description-title {
   font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-style: normal;
   line-height: 1.14;
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -559,9 +575,11 @@ body {
 
 .clients__title {
   font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
+  font-weight: 700;
   letter-spacing: 0.03em;
+  font-style: normal;
+  line-height: 1.17;
+  text-align: center;
   color: #212121;
   margin-bottom: 50px;
 }
@@ -618,10 +636,13 @@ body {
 }
 
 .footer__address {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  line-height: 1.71;
   display: block;
   color: #FFFFFF;
-  line-height: 1.71;
-  font-style: normal;
   margin-top: 0;
   margin-bottom: 0;
   width: 231px;
@@ -629,10 +650,12 @@ body {
 
 .footer__address-name,
 .footer__address-list .footer__address-list-item {
-  margin-bottom: 9px;
   font-size: 14px;
-  line-height: 1.71;
+  font-weight: 400;
   letter-spacing: 0.03em;
+  font-style: normal;
+  line-height: 1.71;
+  margin-bottom: 9px;
 }
 
 .footer__address-list-item:last-child {
@@ -664,16 +687,7 @@ body {
   align-items: center;
   width: 20px;
   height: 20px;
-  fill: currentColor;
-}
-
-.footer__icon-item .footer__icon {
   fill: #FFFFFF;
-}
-
-.footer__link-social:hover,
-.footer__link-social:focus {
-  background-color: #2196F3;
 }
 
 .footer__link-social {
@@ -685,6 +699,10 @@ body {
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__link-social:hover, .footer__link-social:focus {
+  background-color: #2196F3;
 }
 
 .footer__icon-item {
@@ -768,15 +786,17 @@ body {
 }
 
 .portfolio__filters {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  line-height: 1.63;
   padding: 6px 22px;
   border-radius: 4px;
   border: #2196F3;
   min-width: 73px;
   color: #212121;
   background: #F5F4FA;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
   text-align: center;
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -796,15 +816,15 @@ body {
   margin-top: -30px;
 }
 
-.portfolio__link:hover,
-.portfolio__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .portfolio__list-item {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.portfolio__link:hover,
+.portfolio__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio__card-border {
@@ -816,18 +836,22 @@ body {
 }
 
 .portfolio__title {
-  color: #000000;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-style: normal;
   line-height: 2;
+  color: #000000;
   margin-bottom: 4px;
 }
 
 .portfolio__text {
-  color: #757575;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.87;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  line-height: 1.88;
+  color: #757575;
 }
 
 .portfolio__img-section {
@@ -842,6 +866,11 @@ body {
 }
 
 .portfolio__description {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  line-height: 1.56;
   display: block;
   position: absolute;
   width: 100%;
@@ -849,9 +878,6 @@ body {
   padding-top: 63px;
   padding-left: 23px;
   padding-right: 23px;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
   background: rgba(33, 150, 243, 0.9);
   color: #FFFFFF;
   transform: translateY(100%);
@@ -927,12 +953,12 @@ body {
 }
 
 .form__title {
-  font-style: 400;
-  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-style: normal;
   line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 10px;
   color: #212121;
 }
@@ -943,11 +969,13 @@ body {
 }
 
 .form__description {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-style: 0.01em;
+  line-height: 1.17;
   display: block;
   margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
   color: #757575;
 }
 
@@ -1059,10 +1087,12 @@ body {
 }
 
 .license__checkbox-text {
-  display: inline-block;
   font-size: 14px;
-  line-height: 1.71;
+  font-weight: 400;
   letter-spacing: 0.03em;
+  font-style: normal;
+  line-height: 1.71;
+  display: inline-block;
   color: #757575;
 }
 

@@ -4,10 +4,8 @@
 
 
     &__title{
-    font-size: 36px;
-    line-height: 1.16;
+        @include font(36px, 700, 42px);
     text-align: center;
-    letter-spacing: 0.03em;
     color: $title-black-color;
     margin-bottom: 50px;
     }

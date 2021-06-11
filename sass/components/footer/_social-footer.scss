@@ -14,17 +14,10 @@
         align-items:center;
         width: 20px;
         height: 20px;
-        fill: currentColor;
-    }
-
-    .footer__icon-item .footer__icon{
         fill: $primary-white-color;
     }
 
-    .footer__link-social:hover,
-    .footer__link-social:focus{
-        background-color:$accent-color; 
-    }
+   
 
     .footer__link-social{
         display: flex;
@@ -35,17 +28,21 @@
         height: 44px;
         background: rgba(255, 255, 255, 0.1);
         transition: background-color $time-function $cubic-bezier;
+
+         &:hover,
+         &:focus{
+            background-color:$accent-color; 
+        }
     }
 
     .footer__icon-item{
         display: flex;
         margin-right: 10px;
-    }
 
-    .footer__icon-item:last-child{
-        margin-right: 0;
+        &:last-child{
+            margin-right: 0;
+        }
     }
-
 
     .footer__text{
         text-transform: uppercase;
@@ -54,4 +51,5 @@
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
-        color: $primary-white-color;}
+        color: $primary-white-color;
+    }

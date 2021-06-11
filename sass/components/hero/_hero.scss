@@ -9,13 +9,10 @@
     background-size: cover;
 
     &__title{
+        @include font(44px, 700, 60px, $Fst:0.06em);
         margin-top: 0;
         margin-bottom: 30px;
         color: $primary-white-color;
-        font-weight: 700;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 0.06em;
         text-transform: uppercase;
     }
 

@@ -60,11 +60,8 @@
 }
 
 &__checkbox-text{
-
+    @include font(14px, 400, 24px);
     display: inline-block;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
     color: $main-text-color;
     
 }

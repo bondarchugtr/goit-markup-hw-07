@@ -7,18 +7,16 @@
 }
 
 .portfolio__title{
+    @include font($fs:18px, $fw:700, $lh:36px);
     color: $logo-black-color;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
     margin-bottom: 4px;
 }
 
 .portfolio__text{
+     @include font($fs:16px, $fw:400, $lh:30px);
     color: $main-text-color;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.87;
+    
+  
 }
 
  .portfolio__img-section{
@@ -34,6 +32,8 @@
 }
 
 .portfolio__description{
+
+    @include font($fs:18px, $fw:400, $lh:28px);
     display: block;
     position: absolute;
     width: 100%;
@@ -41,19 +41,17 @@
     padding-top: 63px ;
     padding-left: 23px;
     padding-right: 23px;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    background: rgba(33, 150, 243, 0.9);
+    background: $background-cardPotfolio;
     color: $primary-white-color;
     transform: translateY(100%);
     transition: transform $time-function $cubic-bezier;
+
+    .portfolio__link:hover &,
+    .portfolio__link:focus &{
+        transform: translateY(-100%);
+
+}
     
 }
 
-.portfolio__link:hover .portfolio__description,
-.portfolio__link:focus .portfolio__description{
 
-    transform: translateY(-100%);
-
-}

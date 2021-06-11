@@ -1,5 +1,4 @@
-    // отображение количества знаков
-  @function decimal-round($number, $digits: 0, $mode: round) {
+ @function decimal-round($number, $digits: 0, $mode: round) {
   $n: 1;
   // $number must be a number
   @if type-of($number) != number {
@@ -31,14 +30,11 @@
   }
 }
     
-    
-// @mixin font($fw: 500, $fs: 14px, $lh){
-//     font-weight: $fw;
-//     font-size: $fz;
-//     line-height: decimal-round($lh / $fs, 2);
-// }
-@mixin font($fs: 14px, $fw: 500, $lh: 24px) {
+
+@mixin font($fs, $fw, $lh, $ls: 0.03em, $Fst:normal){
   font-size: $fs;
   font-weight: $fw;
+  letter-spacing: $ls;
+  font-style: $Fst;
   line-height: decimal-round($lh / $fs, 2);
 }

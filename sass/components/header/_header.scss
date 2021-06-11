@@ -8,13 +8,9 @@
         align-items: center;
 
     &__style{
+         @include font(14px, 700, 16px, $Fst:0.02em);
         color: $title-black-color;
         position: relative;
-        // @include font($fw, $fs, $lh);
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.57;
-        letter-spacing: 0.02em;
         padding-top: 32px;
         padding-bottom: 32px;
         transition: color $time-function $cubic-bezier;
