@@ -8,10 +8,10 @@
     font-family: 'Raleway', sans-serif;
     animation: pulse 500ms 6 $cubic-bezier $time-function;
 
-        &__weblogo{
-            color: $accent-color;
-            @include font($fs:26px, $fw:700, $lh:31px);
-        }
+    &__weblogo{
+        color: $accent-color;
+        @include font($fs:26px, $fw:700, $lh:31px);
+    }
 }
 
     .logo-footer--white{
@@ -19,7 +19,7 @@
         animation: none ;
     }
 
-    .logo-footer__&{
+    .logo-footer__logo{
         padding: 0;
         margin-bottom: 20px;
     }
