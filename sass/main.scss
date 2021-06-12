@@ -5,42 +5,48 @@
 @import './utils/mixin';
 @import './utils/variables';
 @import './utils/visuallyhidden';
-@import './utils/button';
-@import './utils/style';
-@import './utils/logo';
+
 /* ====== END Utitlits ======*/
 
 
-/* ====== Components======*/
+/* ====== layout ======*/
 
 /* ====== SECTION index======*/
-@import './components/header/header';
-@import './components/hero/hero';
-@import './components/features/features';
-@import './components/command/command';
-@import './components/command/icon-social-comand';
-@import './components/work/work';
-@import './components/clients/clients';
-@import './components/clients/icon-clients';
-@import './components/footer/footer';
-@import './components/footer/social-footer';
-@import './components/footer/subscribe';
+
+@import './layout/header/header';
+@import './layout/hero/hero';
+@import './layout/features/features';
+@import './layout/command/command';
+@import './layout/command/icon-social-comand';
+@import './layout/work/work';
+@import './layout/clients/clients';
+@import './layout/clients/icon-clients';
+@import './layout/footer/footer';
+@import './layout/footer/social-footer';
+@import './layout/footer/subscribe';
 /* ====== END SECTION index======*/
 
 /*====== SECTION PORTFOLIO ======*/
-@import './components/page-portfolio/filters';
-@import './components/page-portfolio/list';
-@import './components/page-portfolio/card';
+@import './layout/page-portfolio/filters';
+@import './layout/page-portfolio/list';
+@import './layout/page-portfolio/card';
 /*====== END SECTION PORTFOLIO ======*/
 
 /*====== SECTION BACKDROP ======*/
-@import './components/backdrop/backdrop';
-@import './components/backdrop/modal';
-@import './components/backdrop/form';
-@import './components/backdrop/licens-checkbox';
+@import './layout/backdrop/backdrop';
+@import './layout/backdrop/licens-checkbox';
 /*====== END SECTION BACKDROP ======*/
 
 
-/* ====== END Components======*/
+/* ====== END layout ======*/
 
+/* ====== components ======*/
+@import './components/button';
+@import './components/logo';
+@import './components/modal';
+@import './components/form';
+/* ====== END components ======*/
 
+/* ====== base ======*/
+@import './base/style';
+/* ====== END base ======*/

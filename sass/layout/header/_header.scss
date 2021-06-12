@@ -2,13 +2,12 @@
     border-bottom: 1px solid $color-bottom;
 }  
 
-
     .nav{
         display: flex;
         align-items: center;
 
     &__style{
-         @include font(14px, 700, 16px, $ls: 0.02em);
+         @include font(14px, 500, 16px, $ls: 0.02em);
         color: $title-black-color;
         position: relative;
         padding-top: 32px;
