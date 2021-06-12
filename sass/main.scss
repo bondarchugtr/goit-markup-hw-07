@@ -1,18 +1,17 @@
-
-
- /* ====== Utitlits ======*/
+/* ====== Utitlits ======*/
+@import './utils/variables';
 @import './utils/ModernNormalize';
 @import './utils/mixin';
-@import './utils/variables';
 @import './utils/visuallyhidden';
-
 /* ====== END Utitlits ======*/
 
+/* ====== base ======*/
+@import './base/style';
+/* ====== END base ======*/
 
 /* ====== layout ======*/
 
 /* ====== SECTION index======*/
-
 @import './layout/header/header';
 @import './layout/hero/hero';
 @import './layout/features/features';
@@ -36,8 +35,6 @@
 @import './layout/backdrop/backdrop';
 @import './layout/backdrop/licens-checkbox';
 /*====== END SECTION BACKDROP ======*/
-
-
 /* ====== END layout ======*/
 
 /* ====== components ======*/
@@ -47,6 +44,3 @@
 @import './components/form';
 /* ====== END components ======*/
 
-/* ====== base ======*/
-@import './base/style';
-/* ====== END base ======*/

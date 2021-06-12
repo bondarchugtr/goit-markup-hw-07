@@ -13,10 +13,8 @@
 
     &__title{
     margin-bottom: 10px;
+    @include font(14px, 700, 16px);
     color: $title-black-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
     text-transform: uppercase;   
 }
     &__text{ 
